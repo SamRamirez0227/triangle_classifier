@@ -18,6 +18,27 @@ An equilateral triangle has three equal angles, each measuring 60 degrees. Since
 
 3. When the entered sides form a right triangle, the returned classification begins with "Right" so the piece can be identified as requiring reinforced corners.
 
+## Running the Tests
+
+Install the required dependency:
+
+pip install -r requirements.txt
+
+Run all tests with:
+
+pytest -v
+
+## Equivalence Classes and Boundaries
+
+The equivalence classes identified for the triangle classifier are:
+- Invalid triangles
+- Equilateral triangles
+- Isosceles triangles
+- Scalene triangles
+- Right triangles
+
+The main boundaries tested are side lengths less than or equal to zero and the triangle inequality. The degenerate boundary occurs when the sum of two sides equals the third side, such as (1, 2, 3), which must return "Invalid".
+
 ## AI-Use Disclosure
 
 I used GitHub Copilot to assist with drafting the unit tests in `test_triangle.py`. I reviewed each suggestion against the assignment requirements and kept or edited the generated tests when necessary. In particular, I edited the non-integer right-triangle test to cover the required `5, 5, 5*sqrt(2)` case.

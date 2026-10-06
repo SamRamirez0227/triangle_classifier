@@ -1,5 +1,4 @@
 import math
-import pytest
 
 from triangle import classify_triangle
 

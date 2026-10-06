@@ -43,4 +43,4 @@ The main boundaries tested are side lengths less than or equal to zero and the t
 
 I used GitHub Copilot to assist with drafting the unit tests in `test_triangle.py`. I reviewed each suggestion against the assignment requirements and kept or edited the generated tests when necessary. In particular, I edited the non-integer right-triangle test to cover the required `5, 5, 5*sqrt(2)` case.
 
-I also used ChatGPT to review my implementation and Copilot-generated tests, organize the README, and develop the acceptance criteria and acceptance test. I manually reviewed the code and ran the complete pytest test suite to verify that the implementation and tests worked correctly.
+I also used ChatGPT to review my implementation and Copilot-generated tests and develop the acceptance criteria and acceptance test. I manually reviewed the code and ran the complete pytest test suite to verify that the implementation and tests worked correctly.
